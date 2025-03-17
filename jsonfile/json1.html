@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+        .image{
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            display: block;
+        }
+        .item{
+            border: 2px solid black;
+            padding: 10px;
+            position: relative;
+        }
+        .item:hover .image{
+            transform: scale(1.1);
+            transition: 0.5s ease ;
+        }
+        .item:hover .rating{
+            display: block;
+        }
+        .rating{
+            position: absolute;
+            display: none;
+            right:10px;
+            top: 10px;
+        }
+        .rating::after{
+            content: '⭐';
+        }
+
+    </style>
+</head>
+<body>
+    <script src="./json1.js"></script>
+</body>
+</html>

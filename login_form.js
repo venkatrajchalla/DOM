@@ -16,7 +16,7 @@ function postData(Name, PhoneNo, Address, City, State){
         alert("Add data in every feild")
     }
     else{
-        fetch("http://localhost:3000/users", {
+        fetch("https://whip-metal-bugle.glitch.me", {
             "method" : "POST",
             "headers" : {
                 "Content-Type" : "application/json"
@@ -53,7 +53,7 @@ function postData(Name, PhoneNo, Address, City, State){
 function displayData(){
     var container = document.getElementById("container");
 
-    fetch("http://localhost:3000/users")
+    fetch("https://whip-metal-bugle.glitch.me")
         .then( res => res.json())
         .then(data =>{
             for ( var obj of data){

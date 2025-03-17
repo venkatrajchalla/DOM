@@ -1,3 +1,20 @@
 {
-    "users":[]
+  "users": [
+    {
+      "id": "78f9",
+      "Name": "Venkat Raj",
+      "PhoneNo": "0000000000",
+      "Address": "Hyderabad",
+      "City": "Hyderabad",
+      "State": "Telangana"
+    },
+    {
+      "id": "43f1",
+      "Name": "Naresh",
+      "PhoneNo": "9014305612",
+      "Address": "KPHB ",
+      "City": "HYDERABAD",
+      "State": "TELANGANA"
+    }
+  ]
 }
